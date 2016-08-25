@@ -215,5 +215,18 @@ namespace GUI
         {
 
         }
+
+        private void btAddUnidadeMedida_Click(object sender, EventArgs e)
+        {
+            frmCadastrounidadeDeMedida f = new frmCadastrounidadeDeMedida();
+            f.ShowDialog();
+            f.Dispose();
+            DALConexao cx = new DALConexao(DadosDaConexao.StringDeConexao);
+            //combo und medida
+            BLLUnidadeDeMedida ubll = new BLLUnidadeDeMedida(cx);
+            cbUnd.DataSource = ubll.Localizar("");
+            cbUnd.DisplayMember = "umed_nome";
+            cbUnd.ValueMember = "umed_cod";
+        }
     }
 }

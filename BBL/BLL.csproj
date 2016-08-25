@@ -46,6 +46,8 @@
     <Compile Include="BLLFornecedor.cs" />
     <Compile Include="BLLProduto.cs" />
     <Compile Include="BLLTipoPagamento.cs" />
+    <Compile Include="BLLUnidadeDeMedida.cs" />
+    <Compile Include="DALUnidadeDeMedida.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="validacpf.cs" />
   </ItemGroup>

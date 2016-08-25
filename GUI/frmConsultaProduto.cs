@@ -30,25 +30,37 @@ namespace GUI
         private void frmConsultaProduto_Load(object sender, EventArgs e)
         {
              btLocalizar_Click(sender, e);
+
             dgvDados.Columns[0].HeaderText = "Código";
-               //dgvDados.Columns[0].HeaderText = "Código";
-               dgvDados.Columns[0].Width = 50;
-               dgvDados.Columns[1].HeaderText = "Produto";
-               dgvDados.Columns[1].Width = 150;
-               dgvDados.Columns[2].HeaderText = "Descrição";
-               dgvDados.Columns[2].Width = 200;
-               dgvDados.Columns[3].HeaderText = "Foto";
-               dgvDados.Columns[3].Width = 50;
-               dgvDados.Columns[4].HeaderText = "Raça";
-               dgvDados.Columns[4].Width = 50;
-              // dgvDados.Columns[5].HeaderText = "Raça";
-               //dgvDados.Columns[5].Width = 100;
-
-
-            //oculta colunas
-            dgvDados.Columns["pro_foto"].Visible = false;
+                //dgvDados.Columns[0].HeaderText = "Código";
+                dgvDados.Columns[0].Width = 50;
+                 dgvDados.Columns[1].HeaderText = "Produto";
+                 dgvDados.Columns[1].Width = 150;
+                 dgvDados.Columns[2].HeaderText = "Descrição";
+                 dgvDados.Columns[2].Width = 200;
+                 dgvDados.Columns[3].HeaderText = "Foto";
+               dgvDados.Columns[4].Width = 100;
+               
               
-               dgvDados.Columns["cat_cod"].Visible = false;
+          //   dgvDados.Columns[8].HeaderText = "Categoria";
+           //  dgvDados.Columns[8].Width = 50;
+       //      dgvDados.Columns[9].HeaderText = "Sub Categoria";
+         //    dgvDados.Columns[9].Width = 100;
+            
+
+
+
+                //oculta colunas
+            //dgvDados.Columns["pro_foto"].Visible = false;
+              
+          //    dgvDados.Columns["cat_cod"].Visible = false;
+              // dgvDados.Columns["pro_qtde"].Visible = false;
+              // dgvDados.Columns["umed_cod"].Visible = false;
+               dgvDados.Columns["scat_cod"].Visible = false;
+               //dgvDados.Columns["pro_valorvenda"].Visible = false;
+            // dgvDados.Columns["pro_qtde"].Visible = false;
+           //  dgvDados.Columns["pro_valorvenda"].Visible = false;
+            //dgvDados.Columns["pro_valorpago"].Visible = false;
                
 
            

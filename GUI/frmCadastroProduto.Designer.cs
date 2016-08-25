@@ -43,6 +43,9 @@
             this.btLoFoto = new System.Windows.Forms.Button();
             this.btRmFoto = new System.Windows.Forms.Button();
             this.btaddCategoria = new System.Windows.Forms.Button();
+            this.btAddUnidadeMedida = new System.Windows.Forms.Button();
+            this.cbUnd = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.pnDados.SuspendLayout();
             this.pnBotoes.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -51,6 +54,9 @@
             // 
             // pnDados
             // 
+            this.pnDados.Controls.Add(this.btAddUnidadeMedida);
+            this.pnDados.Controls.Add(this.cbUnd);
+            this.pnDados.Controls.Add(this.label7);
             this.pnDados.Controls.Add(this.btaddCategoria);
             this.pnDados.Controls.Add(this.btRmFoto);
             this.pnDados.Controls.Add(this.btLoFoto);
@@ -239,6 +245,36 @@
             this.btaddCategoria.UseVisualStyleBackColor = true;
             this.btaddCategoria.Click += new System.EventHandler(this.btaddCategoria_Click);
             // 
+            // btAddUnidadeMedida
+            // 
+            this.btAddUnidadeMedida.Location = new System.Drawing.Point(154, 257);
+            this.btAddUnidadeMedida.Margin = new System.Windows.Forms.Padding(2);
+            this.btAddUnidadeMedida.Name = "btAddUnidadeMedida";
+            this.btAddUnidadeMedida.Size = new System.Drawing.Size(22, 19);
+            this.btAddUnidadeMedida.TabIndex = 27;
+            this.btAddUnidadeMedida.Text = "+";
+            this.btAddUnidadeMedida.UseVisualStyleBackColor = true;
+            this.btAddUnidadeMedida.Click += new System.EventHandler(this.btAddUnidadeMedida_Click);
+            // 
+            // cbUnd
+            // 
+            this.cbUnd.FormattingEnabled = true;
+            this.cbUnd.Location = new System.Drawing.Point(11, 255);
+            this.cbUnd.Margin = new System.Windows.Forms.Padding(2);
+            this.cbUnd.Name = "cbUnd";
+            this.cbUnd.Size = new System.Drawing.Size(120, 21);
+            this.cbUnd.TabIndex = 26;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(8, 229);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 13);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "Cor :";
+            // 
             // frmCadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -272,5 +308,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pbFoto;
         private System.Windows.Forms.Button btaddCategoria;
+        private System.Windows.Forms.Button btAddUnidadeMedida;
+        private System.Windows.Forms.ComboBox cbUnd;
+        private System.Windows.Forms.Label label7;
     }
 }
